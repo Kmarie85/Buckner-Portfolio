@@ -23,10 +23,24 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.035), transparent 28%),
-    radial-gradient(circle at 85% 20%, rgba(240, 183, 164, 0.08), transparent 24%),
+    radial-gradient(
+      circle at top left,
+      rgba(255, 255, 255, 0.035),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 20%,
+      rgba(240, 183, 164, 0.08),
+      transparent 24%
+    ),
     var(--bg);
   color: var(--text);
 }
@@ -89,7 +103,11 @@ button {
   height: 50px;
   border-radius: 14px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(215, 122, 126, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(215, 122, 126, 0.08)
+  );
   font-weight: 800;
   letter-spacing: 0.06em;
 }
@@ -286,7 +304,10 @@ button {
   padding: 0 1.2rem;
   border-radius: 999px;
   font-weight: 600;
-  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    border-color 0.2s ease;
 }
 
 .button:hover {
@@ -296,6 +317,10 @@ button {
 .button-primary {
   background: linear-gradient(135deg, var(--accent), var(--accent-2));
   color: #121212;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
 }
 
 .button-secondary {
@@ -316,7 +341,11 @@ button {
   aspect-ratio: 0.86;
   overflow: hidden;
   border-radius: 30px;
-  background: linear-gradient(180deg, rgba(215, 122, 126, 0.1), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(
+    180deg,
+    rgba(215, 122, 126, 0.1),
+    rgba(255, 255, 255, 0.03)
+  );
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
 }
@@ -372,21 +401,26 @@ button {
 .contact-panel,
 .education-card,
 .panel-section {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.028), rgba(255, 255, 255, 0.018));
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.028),
+    rgba(255, 255, 255, 0.018)
+  );
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
 }
 
 .project-card {
-  transition: transform 0.25s ease, border-color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .project-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255,255,255,0.16);
+  border-color: rgba(255, 255, 255, 0.16);
 }
-
 
 .featured-project {
   display: grid;
@@ -414,7 +448,11 @@ button {
 .project-media {
   border-radius: 22px;
   overflow: hidden;
-  background: linear-gradient(135deg, rgba(215, 122, 126, 0.08), rgba(255, 255, 255, 0.03));
+  background: linear-gradient(
+    135deg,
+    rgba(215, 122, 126, 0.08),
+    rgba(255, 255, 255, 0.03)
+  );
   aspect-ratio: 16 / 11;
   min-height: unset;
   display: block;
@@ -486,7 +524,7 @@ button {
   border: 1px solid var(--line);
   display: inline-flex;
   align-items: center;
-  color: var(--muted);
+  color: rgb(22, 22, 22);
 }
 
 /* WHAT I BRING */
@@ -687,4 +725,28 @@ button {
   .info-card {
     padding: 1rem;
   }
+}
+
+a {
+  display: flex;
+  align-items: center; /* vertically centers text with logo */
+  gap: 10px; /* space between logo and name */
+  text-decoration: none;
+}
+
+#logo {
+  height: 50px; /* adjust as needed */
+  width: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand .name {
+  font-family: "Moon Dance", cursive;
+  font-size: 35px;
 }
