@@ -387,6 +387,7 @@ button {
   border-color: rgba(255,255,255,0.16);
 }
 
+
 .featured-project {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
