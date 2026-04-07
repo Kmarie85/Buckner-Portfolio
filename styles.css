@@ -682,6 +682,7 @@ button {
 
   .container {
     width: min(calc(100% - 1.25rem), var(--max-width));
+    
   }
 
   .hero {
@@ -785,10 +786,14 @@ a {
   }
 }
 
+  .hero-actions {
+    justify-content: center;
+  }
+
 @media (max-width: 768px) {
   .about,
   #about {
-    padding-top: 56px;
+    padding-top: 10px;
     padding-bottom: 56px;
   }
 
